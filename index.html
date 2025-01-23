@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Card v2</title>
+  </head>
+  <body>
+    <img src="/card_v2/resources/images/imafia_bg_black 1.png" alt="" style="opacity: 0.5; width: 100vw; height: 100vh; border-radius: 5vw; position: absolute; z-index: 1;">
+    <div class="wrapper_container">
+      <div class="first_line_container">
+        <div class="nick_title">Сокрушитель</div>
+      </div>
+      <div class="content_container">
+        <div class="stats_content_container">
+          <div class="tournament_stats_content_container">
+            <div class="tournament_stat_content_item">
+              Зіграних турнірів: <span class="imafia_data">50</span>
+            </div>
+            <div class="tournament_stat_content_item">
+              Топ 3: <span class="imafia_data">12</span>
+            </div>
+            <div class="tournament_stat_content_item">
+              Топ 1: <span class="imafia_data">5</span>
+            </div>
+          </div>
+          <div class="points_stats_content_container">
+            <div class="avg_points_stats_content_container">
+              <div class="avg_point_stat_content_item">
+                Середній дод. бал (перемога):
+                <span class="imafia_data">0,88</span>
+              </div>
+              <div class="avg_point_stat_content_item">
+                Середній дод. бал (поразка):
+                <span class="imafia_data">0,48</span>
+              </div>
+            </div>
+            <div id="kill_icon">
+              <img src="/card_v2/resources/icons/kill.png" alt="" />
+            </div>
+            <div class="first_blood_points_stats_content_item">
+              First blood: <span class="imafia_data">44,66%</span>
+            </div>
+          </div>
+          <table class="stats_table">
+            <tr>
+              <td></td>
+              <td></td>
+              <td>
+                <img
+                  src="/card_v2/resources/icons/sheriff.png"
+                  alt="sheriff icon"
+                  style="object-fit: cover"
+                  class="role_icon"
+                />
+              </td>
+              <td></td>
+              <td>
+                <img
+                  src="/card_v2/resources/icons/don.png"
+                  alt="don icon"
+                  style="object-fit: cover"
+                  class="role_icon"
+                />
+              </td>
+              <td></td>
+              <td>
+                <img
+                  src="/card_v2/resources/icons/citizen.png"
+                  alt="citizen icon"
+                  style="object-fit: cover"
+                  class="role_icon"
+                />
+              </td>
+              <td></td>
+              <td>
+                <img
+                  src="/card_v2/resources/icons/mafia.png"
+                  alt="mafia icon"
+                  style="object-fit: cover"
+                  class="role_icon"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>Winrate:</td>
+              <td></td>
+              <td><span class="imafia_data">90%</span></td>
+              <td></td>
+              <td><span class="imafia_data">74,6%</span></td>
+              <td></td>
+              <td><span class="imafia_data">13,5%</span></td>
+              <td></td>
+              <td><span class="imafia_data">55%</span></td>
+            </tr>
+            <tr>
+              <td>Середній дод. бал:</td>
+              <td></td>
+              <td><span class="imafia_data">0,49</span></td>
+              <td></td>
+              <td><span class="imafia_data">0,3</span></td>
+              <td></td>
+              <td><span class="imafia_data">1</span></td></td>
+              <td></td>
+              <td><span class="imafia_data">0,66</span></td>
+            </tr>
+          </table>
+        </div>
+        <table class="photos_content_table">
+          <tr>
+            <td class="photo_table_item">
+              <img
+                src="/card_v2/resources/images/citizen.png"
+                alt=""
+                style="object-fit: cover; width: 15vw; height: 26.667vh"
+                class="photo"
+              />
+              <div class="photo_overlay citizen"></div>
+            </td>
+            <td class="photo_table_item">
+              <img
+                src="/card_v2/resources/images/sheriff.png"
+                alt=""
+                style="object-fit: cover; width: 15vw; height: 26.667vh"
+                class="photo"
+              />
+              <div class="photo_overlay sheriff"></div>
+            </td>
+          </tr>
+          <tr>
+            <td class="photo_table_item">
+              <img
+                src="/card_v2/resources/images/mafia.png"
+                alt=""
+                style="object-fit: cover; width: 15vw; height: 26.667vh"
+                class="photo"
+              />
+              <div class="photo_overlay mafia"></div>
+            </td>
+            <td class="photo_table_item">
+              <img
+                src="/card_v2/resources/images/don.png"
+                alt=""
+                style="object-fit: cover; width: 15vw; height: 26.667vh"
+                class="photo"
+              />
+              <div class="photo_overlay don"></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="intercept-stats-presentation-container">
+        <div class="intercept-stat-item">
+          <div class="intercept-stat-item-title">Топ 3 перемоги за мафію:</div>
+          <div class="intercept-stat-item-cards-container">
+            <div class="intercept-stat-item-card">
+              <div class="intercept-stat-item-card-photo_red">
+                <img
+                  src="/card_v2/resources/images/player.png"
+                  alt="intercept_player_photo"
+                  class="intercept_player_photo"
+                />
+              </div>
+              <div class="intercept-stat-item-card-title">
+                <span class="imafia_data">Космічна</span>
+              </div>
+            </div>
+            <div class="intercept-stat-item-card">
+              <div class="intercept-stat-item-card-photo_red">
+                <img
+                  src="/card_v2/resources/images/player.png"
+                  alt="intercept_player_photo"
+                  class="intercept_player_photo"
+                />
+              </div>
+              <div class="intercept-stat-item-card-title">
+                <span class="imafia_data">Сокрушитель</span>
+              </div>
+            </div>
+            <div class="intercept-stat-item-card">
+              <div class="intercept-stat-item-card-photo_red">
+                <img
+                  src="/card_v2/resources/images/player.png"
+                  alt="intercept_player_photo"
+                  class="intercept_player_photo"
+                />
+              </div>
+              <div class="intercept-stat-item-card-title">
+                <span class="imafia_data">Persik</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="intercept-stat-item">
+          <div class="intercept-stat-item-title">Топ 3 перемоги за місто:</div>
+          <div class="intercept-stat-item-cards-container">
+            <div class="intercept-stat-item-card">
+              <div class="intercept-stat-item-card-photo_black">
+                <img
+                  src="/card_v2/resources/images/player.png"
+                  alt="intercept_player_photo"
+                />
+              </div>
+              <div class="intercept-stat-item-card-title">
+                <span class="imafia_data">Космічна</span>
+              </div>
+            </div>
+            <div class="intercept-stat-item-card">
+              <div class="intercept-stat-item-card-photo_black">
+                <img
+                  src="/card_v2/resources/images/player.png"
+                  alt="intercept_player_photo"
+                />
+              </div>
+              <div class="intercept-stat-item-card-title">
+                <span class="imafia_data">Сокрушитель</span>
+              </div>
+            </div>
+            <div class="intercept-stat-item-card">
+              <div class="intercept-stat-item-card-photo_black">
+                <img
+                  src="/card_v2/resources/images/player.png"
+                  alt="intercept_player_photo"
+                />
+              </div>
+              <div class="intercept-stat-item-card-title">
+                <span class="imafia_data">Persik</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="intercept-stat-item">
+          <div class="intercept-stat-item-title">
+            Топ 3 поразки в різнокольорі:
+          </div>
+          <div class="intercept-stat-item-cards-container">
+            <div class="intercept-stat-item-card">
+              <div class="intercept-stat-item-card-photo_red">
+                <img
+                  src="/card_v2/resources/images/player.png"
+                  alt="intercept_player_photo"
+                />
+              </div>
+              <div class="intercept-stat-item-card-title">
+                <span class="imafia_data">Космічна</span>
+              </div>
+            </div>
+            <div class="intercept-stat-item-card">
+              <div class="intercept-stat-item-card-photo_red">
+                <img
+                  src="/card_v2/resources/images/player.png"
+                  alt="intercept_player_photo"
+                />
+              </div>
+              <div class="intercept-stat-item-card-title">
+                <span class="imafia_data">Сокрушитель</span>
+              </div>
+            </div>
+            <div class="intercept-stat-item-card">
+              <div class="intercept-stat-item-card-photo_red">
+                <img
+                  src="/card_v2/resources/images/player.png"
+                  alt="intercept_player_photo"
+                />
+              </div>
+              <div class="intercept-stat-item-card-title">
+                <span class="imafia_data">Persik</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+
+  
+    
+    
+    
+      
+      </div>
+      
+      <div class="intercept-stat-item">
+        <div class="intercept-stat-item-title">
+          Топ 3 перемоги в різнокольорі:
+        </div>
+        <div class="intercept-stat-item-cards-container flex-container">
+          <div class="intercept-stat-item-card">
+            <div class="intercept-stat-item-card-photo">
+              <img
+                src="/resources/images/player.png"
+                alt="intercept_player_photo"
+              />
+            </div>
+            <div class="intercept-stat-item-card-title">Космічна</div>
+          </div>
+          <div class="intercept-stat-item-card">
+            <div class="intercept-stat-item-card-photo">
+              <img
+                src="/resources/images/player.png"
+                alt="intercept_player_photo"
+              />
+            </div>
+            <div class="intercept-stat-item-card-title">Сокрушитель</div>
+          </div>
+          <div class="intercept-stat-item-card">
+            <div class="intercept-stat-item-card-photo">
+              <img
+                src="/resources/images/player.png"
+                alt="intercept_player_photo"
+              />
+            </div>
+            <div class="intercept-stat-item-card-title">Persik</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>

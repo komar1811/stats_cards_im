@@ -1,0 +1,389 @@
+@font-face {
+  font-family: "Blogger Sans" sans-serif;
+  src: url("resources/fonts/BloggerSans-Bold.woff2") format("woff2");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Blogger Sans" sans-serif;
+  src: url("resources/fonts/BloggerSans-Medium.woff2") format("woff2");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Blogger Sans" sans-serif;
+  src: url("resources/fonts/BloggerSans.woff2") format("woff2");
+  font-weight: lighter;
+}
+
+html {
+  font-family: "Blogger Sans";
+  color: white;
+  font-weight: 500;
+}
+
+body {
+  background-image: url("resources/images/final@2x.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+.wrapper_container {
+  z-index: 5;
+  padding: 2vh 2vw 2vh 2vw;
+  height: 90vh;
+}
+
+.content_container {
+  display: flex;
+  justify-content: space-between;
+  width: 90vw;
+  margin-left: 3vw;
+}
+
+.left_container {
+  background-color: #102028d9;
+  padding: 15px 15px 20px 15px;
+  border-radius: 20px;
+  height: 100%;
+}
+
+.tournament_stats_content_table {
+  font-size: 2vw;
+  border-collapse: separate;
+  font-weight: 500;
+  border-spacing: 0.7vw;
+  align-self: center;
+}
+
+.intercept-stat-item-card-photo_red {
+  background-color: rgb(105, 2, 2);
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.intercept-stat-item-card-photo_black {
+  background-color: rgb(0, 0, 0);
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.intercept-stat-item-card-title {
+  text-align: center;
+  font-size: 1vw;
+  margin-top: 0.5vh;
+  align-self: center;
+}
+
+.intercept-stat-item-title {
+  text-align: center;
+
+  font-size: 1.6vw;
+  margin-bottom: 1vh;
+}
+
+.intercept-stat-item-card {
+  width: 5vw;
+  height: 5vw;
+}
+
+.intercept_stats_container {
+  display: flex;
+  justify-content: space-between;
+  width: 60vw;
+
+  background-color: #161b1ebf;
+  padding: 10px 15px 15px 15px;
+  border-radius: 20px;
+  height: 24vh;
+}
+
+.intercept-stat-item-cards-container {
+  display: flex;
+  justify-content: space-between;
+}
+.intercept-stat-item {
+  width: 17vw;
+}
+
+.nick_name {
+  font-weight: bold;
+  font-size: 5vw;
+  text-align: center;
+  width: 60vw;
+  padding-right: 0.5vw;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.first_line_container {
+  display: flex;
+  justify-content: end;
+  width: 90vw;
+  margin-left: 3vw;
+}
+
+.right_container {
+  width: 65vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 90vh;
+  gap: 4vh;
+  font-size: 2vw;
+}
+
+.avg_fb_wrapper_container {
+  display: flex;
+  justify-content: space-between;
+  gap: 3vw;
+}
+.avg_point_container {
+  background-color: #161b1ebf;
+  border-radius: 20px;
+  height: 100%;
+}
+
+.avg_point_table {
+  border-spacing: 0.7vw;
+  width: 30vw;
+  border-collapse: separate;
+}
+
+.first_blood_point_table {
+  border-spacing: 1vw;
+  border-collapse: separate;
+  height: 100%;
+  width: 30vw;
+  vertical-align: middle;
+}
+.first_blood_point_container {
+  background-color: #161b1ebf;
+  border-radius: 20px;
+  height: 100%;
+}
+
+#kill_icon_container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 1vw;
+}
+
+.stats_container {
+  background-color: #161b1ebf;
+
+  border-radius: 20px;
+  height: 25vh;
+}
+
+.stats_table {
+  border-spacing: 1vw;
+  width: 50vw;
+  height: 15vh;
+  border-collapse: separate;
+}
+
+.role_icon {
+  width: 3vw;
+  height: 3vw;
+  align-self: center;
+  justify-self: center;
+}
+
+.imafia_data {
+  font-weight: normal;
+}
+
+/**
+  Нормализация блочной модели
+ */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+/**
+     Убираем внутренние отступы слева тегам списков,
+     у которых есть атрибут class
+    */
+:where(ul, ol):where([class]) {
+  padding-left: 0;
+}
+
+/**
+     Убираем внешние отступы body и двум другим тегам,
+     у которых есть атрибут class
+    */
+body,
+:where(blockquote, figure):where([class]) {
+  margin: 0;
+}
+
+/**
+     Убираем внешние отступы вертикали нужным тегам,
+     у которых есть атрибут class
+    */
+:where(h1, h2, h3, h4, h5, h6, p, ul, ol, dl):where([class]) {
+  margin-block: 0;
+}
+
+:where(dd[class]) {
+  margin-left: 0;
+}
+
+:where(fieldset[class]) {
+  margin-left: 0;
+  padding: 0;
+  border: none;
+}
+
+/**
+     Убираем стандартный маркер маркированному списку,
+     у которого есть атрибут class
+    */
+:where(ul[class]) {
+  list-style: none;
+}
+
+:where(address[class]) {
+  font-style: normal;
+}
+
+/**
+     Обнуляем вертикальные внешние отступы параграфа,
+     объявляем локальную переменную для внешнего отступа вниз,
+     чтобы избежать взаимодействие с более сложным селектором
+    */
+p {
+  --paragraphMarginBottom: 24px;
+
+  margin-block: 0;
+}
+
+/**
+     Внешний отступ вниз для параграфа без атрибута class,
+     который расположен не последним среди своих соседних элементов
+    */
+p:where(:not([class]):not(:last-child)) {
+  margin-bottom: var(--paragraphMarginBottom);
+}
+
+/**
+     Упрощаем работу с изображениями и видео
+    */
+img,
+video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/**
+     Наследуем свойства шрифт для полей ввода
+    */
+input,
+textarea,
+select,
+button {
+  font: inherit;
+}
+
+html {
+  /**
+       Пригодится в большинстве ситуаций
+       (когда, например, нужно будет "прижать" футер к низу сайта)
+      */
+  height: 100%;
+  /**
+       Убираем скачок интерфейса по горизонтали
+       при появлении / исчезновении скроллбара
+      */
+  scrollbar-gutter: stable;
+}
+
+/**
+     Плавный скролл
+    */
+html,
+:has(:target) {
+  scroll-behavior: smooth;
+}
+
+body {
+  /**
+       Пригодится в большинстве ситуаций
+       (когда, например, нужно будет "прижать" футер к низу сайта)
+      */
+  min-height: 100%;
+  /**
+       Унифицированный интерлиньяж
+      */
+  line-height: 1.5;
+}
+
+/**
+     Нормализация высоты элемента ссылки при его инспектировании в DevTools
+    */
+a:where([class]) {
+  display: inline-flex;
+}
+
+/**
+     Курсор-рука при наведении на элемент
+    */
+button,
+label {
+  cursor: pointer;
+}
+
+/**
+     Приводим к единому цвету svg-элементы
+     (за исключением тех, у которых уже указан
+     атрибут fill со значением 'none' или начинается с 'url')
+    */
+:where([fill]:not([fill="none"], [fill^="url"])) {
+  fill: currentColor;
+}
+
+/**
+     Приводим к единому цвету svg-элементы
+     (за исключением тех, у которых уже указан
+     атрибут stroke со значением 'none')
+    */
+:where([stroke]:not([stroke="none"], [stroke^="url"])) {
+  stroke: currentColor;
+}
+
+/**
+     Чиним баг задержки смены цвета при взаимодействии с svg-элементами
+    */
+svg * {
+  transition-property: fill, stroke;
+}
+
+/**
+     Приведение рамок таблиц в классический 'collapse' вид
+    */
+:where(table) {
+  border-collapse: collapse;
+  border-color: currentColor;
+}
+
+/**
+     Удаляем все анимации и переходы для людей,
+     которые предпочитают их не использовать
+    */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

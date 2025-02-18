@@ -1,3 +1,4 @@
+*{display: none !important}
 @font-face {
   font-family: "Blogger Sans" sans-serif;
   src: url("resources/fonts/BloggerSans-Bold.woff2") format("woff2");

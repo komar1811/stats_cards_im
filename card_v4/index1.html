@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <link
+      rel="stylesheet"
+      href="/assets/site/css/presentation_2.css?v=1737749096"
+    />
+    <div class="wrapper_container p__wrapper-js">
+      <div class="first_line_container">
+        <div class="nick_name p__name-js" data-id="129">Levi 2.0</div>
+      </div>
+      <div class="content_container">
+        <div class="left_container">
+          <div class="photo_player">
+            <img
+              src="/card_v4/resources/images/player.png"
+              alt="player"
+              class="p__image-js"
+              style="
+                object-fit: fill;
+                width: 327px;
+                height: 337px;
+                border-radius: 12px;
+                background-color: black;
+              "
+            />
+          </div>
+          <table
+            class="tournament_stats_content_table"
+            style="padding-top: 10px"
+          >
+            <tr>
+              <td>Зіграних турнірів:</td>
+              <td style="text-align: end">
+                <span class="p__tournaments_total-js">40</span>
+              </td>
+            </tr>
+          </table>
+          <table
+            class="tournament_stats_content_table"
+            style="border-spacing: 0px 8px"
+          >
+            <tbody>
+              <tr>
+                <td>Топ 10:</td>
+                <td class="p__top10-js" style="text-align: end">2 (50%)</td>
+              </tr>
+              <tr>
+                <td>Топ 3:</td>
+                <td align="right" class="p__top3-js">-</td>
+              </tr>
+              <tr>
+                <td>Топ 1:</td>
+                <td align="right" class="p__top1-js">-</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="right_container">
+          <div class="avg_fb_wrapper_container">
+            <div class="avg_point_container">
+              <table class="avg_point_table">
+                <tbody>
+                  <tr>
+                    <td style="width: 60%; line-height: 32px">
+                      <div style="text-align: center; padding-bottom: 16px">
+                        Середній дод. бал <br />(перемога):
+                      </div>
+                    </td>
+                    <td
+                      style="
+                        width: 40%;
+                        text-align: end;
+                        padding-bottom: 16px;
+                        font-weight: 500;
+                      "
+                    >
+                      <span class="imafia_data p__add_points_win_per_game-js"
+                        >0.47</span
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      style="width: 60%; text-align: center; line-height: 32px"
+                    >
+                      Середній дод. бал <br />(поразка):
+                    </td>
+                    <td style="width: 40%; text-align: end; font-weight: 500">
+                      <span class="imafia_data p__add_points_loss_per_game-js"
+                        >-0.09</span
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="first_blood_point_container">
+              <table class="first_blood_point_table">
+                <tbody>
+                  <tr style="vertical-align: middle; height: 100%">
+                    <td
+                      style="line-height: 32px; padding-bottom: 16px"
+                      id="kill_icon_container"
+                    >
+                      <div id="kill_icon">
+                        <img
+                          src="resources/icons/kill.png"
+                          alt=""
+                          style="vertical-align: middle"
+                        />
+                      </div>
+                      First blood:
+                    </td>
+                    <td
+                      style="
+                        padding-bottom: 16px;
+                        text-align: right;
+                        font-weight: 500;
+                      "
+                    >
+                      <span class="imafia_data p__fb_percent-js">26.83%</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      style="line-height: 32px; text-align: center; width: 60%"
+                    >
+                      Вбивство шерифа<br />
+                      в 1 ніч:
+                    </td>
+                    <td
+                      class="p__fb_sheriff_percent-js"
+                      style="text-align: right; width: 40%; font-weight: 500"
+                    >
+                      71.43%
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="stats_container">
+            <table class="stats_table">
+              <tbody>
+                <tr>
+                  <td></td>
+                  <td style="text-align: center; width: 115px">
+                    <img
+                      src="resources/icons/sheriff.png"
+                      alt="sheriff icon"
+                      style="object-fit: cover"
+                      class="role_icon"
+                    />
+                  </td>
+                  <td style="text-align: center; width: 115px">
+                    <img
+                      src="resources/icons/don.png"
+                      alt="don icon"
+                      style="object-fit: cover"
+                      class="role_icon"
+                    />
+                  </td>
+
+                  <td style="text-align: center; width: 115px">
+                    <img
+                      src="resources/icons/citizen.png"
+                      alt="citizen icon"
+                      style="object-fit: cover"
+                      class="role_icon"
+                    />
+                  </td>
+
+                  <td style="text-align: center; width: 115px">
+                    <img
+                      src="resources/icons/mafia.png"
+                      alt="mafia icon"
+                      style="object-fit: cover"
+                      class="role_icon"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>Winrate:</td>
+
+                  <td style="text-align: center; font-weight: 500">
+                    <span class="imafia_data p__winrate_role_2-js">28.6%</span>
+                  </td>
+
+                  <td style="text-align: center; font-weight: 500">
+                    <span class="imafia_data p__winrate_role_4-js">50.0%</span>
+                  </td>
+
+                  <td style="text-align: center; font-weight: 500">
+                    <span class="imafia_data p__winrate_role_1-js">50.0%</span>
+                  </td>
+
+                  <td style="text-align: center; font-weight: 500">
+                    <span class="imafia_data p__winrate_role_3-js">88.9%</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Середній дод. бал:</td>
+
+                  <td style="text-align: center; font-weight: 500">
+                    <span class="imafia_data p__add_points_role_2-js"
+                      >0.10</span
+                    >
+                  </td>
+
+                  <td style="text-align: center; font-weight: 500">
+                    <span class="imafia_data p__add_points_role_4-js"
+                      >0.28</span
+                    >
+                  </td>
+
+                  <td style="text-align: center; font-weight: 500">
+                    <span class="imafia_data p__add_points_role_1-js"
+                      >0.13</span
+                    >
+                  </td>
+
+                  <td style="text-align: center; font-weight: 500">
+                    <span class="imafia_data p__add_points_role_3-js"
+                      >0.54</span
+                    >
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="intercept_stats_container">
+            <div class="intercept-stat-item">
+              <div class="intercept-stat-item-title">
+                Топ 3 перемоги за <br />мафію:
+              </div>
+              <div class="intercept-stat-item-cards-container p__win_mafia-js">
+                <div class="intercept-stat-item-card">
+                  <div class="intercept-stat-item-card-photo_black">
+                    <img
+                      src="resources/images/player.png"
+                      alt="intercept_player_photo"
+                    />
+                  </div>
+                  <div class="intercept-stat-item-card-title">
+                    <span class="imafia_data">Kasha</span>
+                  </div>
+                </div>
+                <div class="intercept-stat-item-card">
+                  <div class="intercept-stat-item-card-photo_black">
+                    <img
+                      src="resources/images/player.png"
+                      alt="intercept_player_photo"
+                    />
+                  </div>
+                  <div class="intercept-stat-item-card-title">
+                    <span class="imafia_data">Programmist</span>
+                  </div>
+                </div>
+                <div class="intercept-stat-item-card">
+                  <div class="intercept-stat-item-card-photo_black">
+                    <img
+                      src="resources/images/player.png"
+                      alt="intercept_player_photo"
+                    />
+                  </div>
+                  <div class="intercept-stat-item-card-title">
+                    <span class="imafia_data">nofun</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="intercept-stat-item">
+              <div class="intercept-stat-item-title">
+                Топ 3 перемоги за<br />місто:
+              </div>
+              <div class="intercept-stat-item-cards-container p__win_city-js">
+                <div class="intercept-stat-item-card">
+                  <div class="intercept-stat-item-card-photo_red">
+                    <img
+                      src="resources/images/player.png"
+                      alt="intercept_player_photo"
+                    />
+                  </div>
+                  <div class="intercept-stat-item-card-title">
+                    <span class="imafia_data">Центральный</span>
+                  </div>
+                </div>
+                <div class="intercept-stat-item-card">
+                  <div class="intercept-stat-item-card-photo_red">
+                    <img
+                      src="resources/images/player.png"
+                      alt="intercept_player_photo"
+                    />
+                  </div>
+                  <div class="intercept-stat-item-card-title">
+                    <span class="imafia_data">Programmist</span>
+                  </div>
+                </div>
+                <div class="intercept-stat-item-card">
+                  <div class="intercept-stat-item-card-photo_red">
+                    <img
+                      src="resources/images/player.png"
+                      alt="intercept_player_photo"
+                    />
+                  </div>
+                  <div class="intercept-stat-item-card-title">
+                    <span class="imafia_data">nofun</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="intercept-stat-item">
+              <div class="intercept-stat-item-title">
+                Топ 3 поразки в різнокольорі:
+              </div>
+              <div
+                class="intercept-stat-item-cards-container p__win_different-js"
+              >
+                <div class="intercept-stat-item-card">
+                  <div class="intercept-stat-item-card-photo_black">
+                    <img
+                      src="resources/images/player.png"
+                      alt="intercept_player_photo"
+                    />
+                  </div>
+                  <div class="intercept-stat-item-card-title">
+                    <span class="imafia_data">Wapi</span>
+                  </div>
+                </div>
+                <div class="intercept-stat-item-card">
+                  <div class="intercept-stat-item-card-photo_black">
+                    <img
+                      src="resources/images/player.png"
+                      alt="intercept_player_photo"
+                    />
+                  </div>
+                  <div class="intercept-stat-item-card-title">
+                    <span class="imafia_data">Сокрушитель</span>
+                  </div>
+                </div>
+                <div class="intercept-stat-item-card">
+                  <div class="intercept-stat-item-card-photo_black">
+                    <img
+                      src="resources/images/player.png"
+                      alt="intercept_player_photo"
+                    />
+                  </div>
+                  <div class="intercept-stat-item-card-title">
+                    <span class="imafia_data">Центральный</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      var p_version = 2;
+      var players_id = "";
+      var bg_show = false;
+    </script>
+    <script src="/assets/libs/functions.js" type="text/javascript"></script>
+
+    <script src="/assets/libs/functions.js" type="text/javascript"></script>
+    <script
+      src="/assets/site/js/presentation.js?v=1737746269"
+      type="text/javascript"
+    ></script>
+    <div class="alerts alerts_js"></div>
+    <div class="alerts alerts_js"></div>
+    <div id="veepn-guard-alert"></div>
+    <style>
+      @font-face {
+        font-family: FigtreeVF;
+        src: url(chrome-extension://majdfhpaihoncoakbjgbdhglocklcgno/fonts/FigtreeVF.woff2)
+            format("woff2 supports variations"),
+          url(chrome-extension://majdfhpaihoncoakbjgbdhglocklcgno/fonts/FigtreeVF.woff2)
+            format("woff2-variations");
+        font-weight: 100 1000;
+        font-display: swap;
+      }
+    </style>
+    <div id="veepn-breach-alert"></div>
+    <style>
+      @font-face {
+        font-family: FigtreeVF;
+        src: url(chrome-extension://majdfhpaihoncoakbjgbdhglocklcgno/fonts/FigtreeVF.woff2)
+            format("woff2 supports variations"),
+          url(chrome-extension://majdfhpaihoncoakbjgbdhglocklcgno/fonts/FigtreeVF.woff2)
+            format("woff2-variations");
+        font-weight: 100 1000;
+        font-display: swap;
+      }
+    </style>
+  </body>
+</html>
